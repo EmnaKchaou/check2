@@ -9,16 +9,15 @@ const getAge = (pet) => {
 
 };
 
-let petsWithAge = pets.forEach(pet => {
-  alert(  getAge(pet));
+pets.forEach(pet => pet.age = getAge(pet));
     
 });
 
-let Dogs = pets.filter (  (dog) => dog.type == "dog" );
+const Dogs = pets.filter (  (dog) => dog.type == "dog" );
 console.log(dogs);
 
 
-let jasper = pets.find((pet)=> {
+const jasper = pets.find((pet)=> {
     pet.name =="Jasper"
 }
 );
